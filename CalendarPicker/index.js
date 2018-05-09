@@ -27,7 +27,7 @@ export default class CalendarPicker extends Component {
     this.state = {
       currentMonth: null,
       currentYear: null,
-      selectedStartDate: null,
+      selectedStartDate: this.props.selectedStartDate ? this.props.selectedStartDate : null,
       selectedEndDate: null,
       styles: {},
       ...this.updateScaledStyles(props),
